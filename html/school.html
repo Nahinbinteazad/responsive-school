@@ -4,8 +4,340 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;       
+         }
+        .navbar{
+            margin: 10px 2px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .navs{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            
+        }
+        .navs li a{
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .logo{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            gap :7px;
+        }
+        .logo img{
+            height: 45px;
+        }
+        .one a{
+            color: #fea301;
+        }
+        .one a:hover{
+            color: #765212;
+        }
+        .l2 a{
+            color: #52c5fb;
+        }
+        .l2 a:hover{
+            color: #168bc2;
+        }
+        .l3 a{
+            color: #4bdee6;
+        }
+        .l3 a:hover{
+            color: #166a6e;
+        }
+        .l4 a{
+            color: #625def;
+        }
+        .l4 a:hover{
+            color: #060364;
+        }
+        .but button{
+            padding: 7px 40px;
+            border-radius: 7px;
+            color: #ffffff;
+            background-color: #fea301;
+            border-style: none;
+        }
+        .but button:hover{
+            background-color: #533706;
+        }
+
+        /* empower section */
+        .standard{
+            background-image: url('/assets/bg.png');
+        }
+        .para2{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin: 0px 10px;
+            align-items: center;
+            padding: 50px 50px;
+            margin: 0px 150px;
+        }
+       .para3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 30px;
+        gap: 15px;
+       }
+       .para3 p{
+        color: rgb(128, 128, 128);
+font-family: Raleway;
+font-size: 15.09px;
+font-weight: 500;
+line-height: 28.3px;
+letter-spacing: 0%;
+text-align: center;
+       }
+       .para3 h1{
+        color: rgb(32, 32, 32);
+
+
+text-align: center;
+       }
+       .para3 .button3{
+        border-style: none;
+        background-color: none;
+        color: rgb(135, 0, 255);        
+        font-size: 15.09px;
+        font-weight: 700;
+        line-height: 28.3px;
+        letter-spacing: 0%;
+        text-align: center;
+       }
+       .para3 .button2{
+        border-style: none;
+        background-color: none;
+        color: rgb(240, 170, 0);
+        font-family: Quicksand;
+        font-size: 15.09px;
+        font-weight: 700;
+        line-height: 28.3px;
+        letter-spacing: 0%;
+        text-align: center;
+       }
+       .para3 .button1{
+        border-style: none;
+        background-color: none;
+        color: rgb(100, 200, 255);
+        font-family: Quicksand;
+        font-size: 15.09px;
+        font-weight: 700;
+        line-height: 28.3px;
+        letter-spacing: 0%;
+        text-align: center;
+       }
+       .para3 img{
+        height: 100px;
+        width: 100px;
+       }
+       .pa1{
+        box-sizing: border-box;
+        border: 0.94px solid rgb(222, 245, 255);
+        border-radius: 18.86px;
+        box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+        background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255); }
+       .pa2{
+        box-sizing: border-box;
+        border: 0.94px solid rgb(255, 244, 220);
+        border-radius: 18.86px;
+        box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+        background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+       }
+       .pa3{
+        box-sizing: border-box;
+        border: 0.94px solid rgb(242, 232, 255);
+        border-radius: 18.86px;
+        box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+        background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+       }
+       .standard{
+        margin: 60px 0px;
+       }
+       .standard h1{
+        margin: 0px 200px;
+        display: flex;
+        justify-content: center;
+    }
+        .emp{
+            margin: 30px 100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .orange{
+            color: #fea301;
+        }
+        .blue{
+            color: #52c5fb;
+        }
+        .para{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .big{
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .small{
+            font-size: 13px;
+        }
+        .image img{
+           height: 450px;
+        }
+        .but1 button{
+            padding: 7px 40px;
+            border-radius: 7px;
+            color: #ffffff;
+            background-color: #030200;
+            border-style: none;
+        }
+        .but1 button:hover{
+            
+            color: #000000;
+            background-color: #ffffff;
+            border : 2px solid #000000
+        }
+        .left{
+            display: flex;
+            justify-content: center;
+            height: 30px;
+            gap: 3px;
+        }
+        
+    </style>
 </head>
 <body>
-    Hi!
+    
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="">
+                 <h4>SCHOOL</h4>
+            </div>
+            <div class="navs">
+                <li class="one"><a href="">Home</a></li>
+                <li class="l2"><a href="">About</a></li>
+                <li class="l3"><a href="">Facilities</a></li>
+                <li class="l4"><a href="">Admission</a></li>
+            </div>
+            <div class="but">
+                <button>Contact</button>
+            </div>
+        </nav>
+
+        <!-- empowering section -->
+         
+            <div class="emp">
+                <div class="para">
+                    <p class="big">
+                        <span class="orange">Empowering </span><br>
+                        students from small <br>
+                        age <span class="blue">towards vision</span> 
+                    </p>
+                    <p class="small">
+                        With the Courage,Confidence,Creativity and Compassion to make <br>
+                        their Unique Contribution a Diverse and Dynamic World
+                    </p>
+                    <div class="but1">
+                        <button>
+                       Enroll Now
+                        </button>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="/assets/hero-kids.png" alt="">
+                </div>
+               
+            </div>
+            
+        <div class="standard">
+            <h1>Standard Curriculum</h1>
+            <div class="para2">
+                
+                <div class="para3 pa1">
+                    <img src="/assets/kinder.png" alt="">
+                    <h4>Kinder (3-6) Years</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, nihil?</p>
+                    <p class="button1">Read More</p>
+                </div>
+                <div class="para3 pa2">
+                    <img src="/assets/elementary.png" alt="">
+                    <h4>Elementary School</h4>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, nihil?</p>
+                    <p class="button2">Read More</p>
+                </div>
+                <div class="para3 pa3">
+                    <img src="/assets/middle.png" alt="">
+                    <h4>Middle(10-16) Years</h4>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, nihil?</p>
+                    <p class="button3">Read More</p>
+                </div>
+            </div>
+            <div class="left">
+                <img src="/assets/Button - Previous slide.png" alt="">
+                <img src="/assets/Button - Next slide.png" alt="">
+            </div>
+        </div>
+        
+    <!-- story section  -->
+
+    <div class="story">
+            <h1>Our Stories</h1>
+        <div class="gred">
+            <div class="story-1 sto">
+                <img src="/assets/story-1.png" alt="">
+                <p class="date">November 19,2019</p>
+                <p class="paa">A fun toddler coloring training on
+                    classroom</p>
+                    <p class="poro">Beautiful branding for changes by Never Now in Australia.
+                        changes is a platform for open discussion in an inclusive adipisicing
+                        collaborative environment,provising the...
+                    </p>
+            </div>
+            <div class="story-2 sto">
+                <img src="/assets/story-2.png" alt="">
+                <p class="date">November 19,2019</p>
+                <h4 class="paa">Find out if a school fits the family's needs</h4>
+            </div>
+            <div class="story-3 sto">
+                <img src="/assets/story-3.png" alt="">
+                <p class="date">November 19,2019</p>
+                <h4 class="paa">Summer math & literacy centres for kids</h4>
+
+            </div>
+            <div class="story-4 sto">
+                <img src="/assets/story-4.png" alt="">
+                <p class="date">September 19,2019</p>
+                <h4>Classroom management techniques for new tutors</h4>
+            </div>
+            <div class="story-5 sto">
+                <img src="/assets/story-5.png" alt="">
+                <p class="date">July 19,2019</p>
+                <h4>Conversation rhymes improve kids listening</h4>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
