@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         *{
             margin: 0px;
@@ -26,6 +28,9 @@
         .navs li a{
             font-size: 18px;
             text-decoration: none;
+        }
+        .menu{
+            display: none;
         }
         .logo{
             display: flex;
@@ -74,7 +79,25 @@
         .but button:hover{
             background-color: #533706;
         }
-
+        @media (max-width: 768px) {
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                margin: 0px 100px;
+            }
+            .navs{
+                display: none;
+            }
+            .logo h4{
+                display: none;
+            }
+            .but{
+                display: none;
+            }
+            .menu{
+                display: flex;
+            }
+        }
         /* empower section */
         .standard{
             background-image: url('/assets/bg.png');
@@ -82,6 +105,7 @@
         .para2{
             display: flex;
             flex-direction: row;
+            justify-content: center;
             gap: 30px;
             margin: 0px 10px;
             align-items: center;
@@ -92,6 +116,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 50px 30px;
         gap: 15px;
        }
@@ -223,7 +248,331 @@ text-align: center;
             height: 30px;
             gap: 3px;
         }
+
+        @media (max-width: 768px) {
+            .para2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0px 40px;
+            }
+            .left{
+                display: none;
+            }
+            .standard h1{
+                font-size: 26px;
+                width: 300px;
+                margin: 0px auto;
+            }
+            .emp{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                margin: 24px 43px;
+            }
+            .para{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .para .big{
+                    text-align: center;
+                    font-size: 30px;  
+                    font-weight: 600;
+                    line-height: 50px;
+            }
+            .para .small{
+                text-align: center;
+            }
+            .image img{
+                    height: 400px;
+            }
+        }
+        /* stories */
+
+        .sto{
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column; 
+                
+        }
+        .gred{
+            margin: 10px 300px;
+            display: grid;
+            grid-template-rows: repeat(1,220px);
+            grid-template-columns: repeat(4,205px);
+            gap: 12px;
+            justify-content: center;
+        }
+        .gred .story-1{
+            grid-row: 1/3;
+            grid-column: 1/3;
+        }
+        .story h1{
+            display: flex;
+            justify-content: center;
+            line-height: 90px;
+        }
+        .story{
+            background: url('/assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+        } 
+        .story-1 img , .story-2 img , .story-3 img , .story-4 img , .story-5 img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .story-1 .date{
+            color: white;
+            position: absolute;
+            border-radius: 47.93px;
+            background: rgb(60, 216, 232);
+            top: 242px;
+            left: 30px;
+            height: 40px;
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .story-1 .paa{
+            color: rgb(0, 0, 0);
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 30.35px;
+            text-align: left;
+            padding: 20px 20px;
+        }
+        .story-1 .poro{
+            color: rgb(102, 102, 102);
+            font-size: 15.34px;
+            font-weight: 500;
+            line-height: 29.76px;
+            letter-spacing: 0%;
+            text-align: left;
+            padding: 2px 20px;
+        }
         
+        .story-2 .date{
+            position: absolute;
+            border-radius: 47.93px;
+            background: rgb(149, 178, 38);            color: white;
+            height: 35px;
+            width: 135px;
+            top: 108px;
+            left: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .story-2 .paa{
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16.35px;
+            text-align: left;
+            padding: 30px 20px;
+        }
+        .story-3 .date{
+            position: absolute;
+            border-radius: 47.93px;
+            background: rgb(93, 88, 240);            height: 35px;
+            width: 135px;
+            top: 108px;
+            left: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .story-3 .paa{
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16.35px;
+            text-align: left;
+            padding: 30px 20px;
+        }
+
+        .story-4 .date{
+            position: absolute;
+            border-radius: 47.93px;
+            background: rgb(149, 178, 38);            color: white;
+            height: 35px;
+            width: 135px;
+            top: 108px;
+            left: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .story-4 .paa{
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16.35px;
+            text-align: left;
+            padding: 30px 20px;
+        }
+
+        .story-5 .date{
+            position: absolute;
+            border-radius: 47.93px;
+            background: rgb(149, 178, 38);            color: white;
+            height: 35px;
+            width: 135px;
+            top: 108px;
+            left: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .story-5 .paa{
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16.35px;
+            text-align: left;
+            padding: 30px 20px;
+        }
+
+       
+        .loj button{
+        position: static;
+        width: 147px;
+        height: 40px;
+        color: white;
+        font-size: 16px;
+        border-radius: 12px;
+        background: rgb(17, 17, 17);
+        margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            
+            .story-1 {
+                display: none;
+            }
+        .story .gred{
+            display: grid;
+            grid-template-rows:  repeat(2,200px);
+            grid-template-columns: repeat(2,190px);
+            gap: 12px;
+            justify-content: center;
+        }
+        
+        
+}
+/* footer  */
+        
+.last {
+    padding: 70px 200px; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    background: rgb(1, 172, 253); 
+    gap: 20px; 
+    
+}
+
+footer .kiddo {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    color: white;
+
+}
+
+footer .kiddo img {
+    height: 50px;
+    width: 50px;
+}
+
+.kid p {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    padding: 20px 0;
+    max-width: 400px; 
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.about h3 {
+    margin-bottom: 10px;
+}
+
+.about .opt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about .opt a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.keep {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.keep p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.keep .image {
+    display: flex;
+    gap: 10px;
+}
+
+.keep .image img {
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .last {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left; 
+        text-align: left; 
+        padding: 60px 70px;
+    }
+
+
+    .keep .image {
+        justify-content: center; 
+    }
+}
+
+
+
+
     </style>
 </head>
 <body>
@@ -241,6 +590,9 @@ text-align: center;
             </div>
             <div class="but">
                 <button>Contact</button>
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
 
@@ -268,6 +620,8 @@ text-align: center;
                 </div>
                
             </div>
+        
+      
             
         <div class="standard">
             <h1>Standard Curriculum</h1>
@@ -329,15 +683,52 @@ text-align: center;
             <div class="story-4 sto">
                 <img src="/assets/story-4.png" alt="">
                 <p class="date">September 19,2019</p>
-                <h4>Classroom management techniques for new tutors</h4>
+                <h4 class="paa">Classroom management techniques for new tutors</h4>
             </div>
             <div class="story-5 sto">
                 <img src="/assets/story-5.png" alt="">
                 <p class="date">July 19,2019</p>
-                <h4>Conversation rhymes improve kids listening</h4>
+                <h4 class="paa">Conversation rhymes improve kids listening</h4>
                 
             </div>
         </div>
+        <div class="loj">
+        <button>View All</button></div>
     </div>
+  <!-- marquee  -->
+  <marquee style=" color: white;  background-color:#52c5fb;" behavior="scroll" direction="left" scrollamount="6">
+    Want To Know More! Contact With Us . 
+  </marquee>
+     <!-- footer  -->
+    <footer class="last">
+   
+        <div class="kid">
+         <div class="kiddo">
+         <img src="/assets/logo white.png" alt="">
+            <h1>Kids <br> Education</h1>
+         </div>
+            <p>Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.</p>
+        </div>
+
+        <div class="about">
+            <h3>About School</h3>
+            <div class="opt">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Facilities</a>
+                <a href="">Admission</a>
+            </div>    
+        </div>
+
+        <div class="keep">
+            <p>Keep In Touch</p>
+            <div class="image">
+                <img src="/assets/fb.png" alt="">
+                <img src="/assets/dribble.png" alt="">
+                <img src="/assets/twitter.png" alt="">
+                <img src="/assets/google+.png" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
